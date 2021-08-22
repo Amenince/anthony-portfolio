@@ -4,26 +4,134 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Anthony's Resume 2020</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+      crossorigin="anonymous"
+    />
+    <title>Anthony Cook | Portfolio</title>
   </head>
   <body>
-    <div id="info">
-      <h1>Anthony Cook</h1>
-      <!-- Contact Info -->
-      <!-- location -->
-      <p>St. Louis, MO 63114</p>
-      <!-- number -->
-      <p>(314) 665-8962</p>
-      <!-- email, github, linkedin -->
-      <a href="https://github.com/Amenince">GitHub</a>
-      <a href="https://www.linkedin.com/in/anthonyscook/">LinkedIn</a>
-      <a href="mailto: anthonyscook777@gmail.com">Email</a>
-    </div>
-    <div id="pages">
-      <a href="education.html">Education</a>
-      <a href="projects.html">Projects</a>
-      <a href="skills.html">Skills</a>
-      <a href="experience.html">Experience</a>
-    </div>
+    <header>
+      <!-- <div class="logo">
+        <img
+          src="https://media-exp1.licdn.com/dms/image/C5603AQFkYk31ZGgNuA/profile-displayphoto-shrink_400_400/0?e=1600905600&v=beta&t=iuukUV9OUtf4QaPNjwH4WZuNpYoIRbWXDm3vziuP4ok"
+          alt="image of anthony"
+        />
+        <button class="nav-toggle" aria-label="toggle navigation">
+          <span class="hamburger"></span>
+        </button>
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">My Services</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">About Me</a>
+            </li>
+            <li class="nav__item"><a href="#" class="nav__link">My Work</a></li>
+          </ul>
+        </nav>
+      </div> -->
+    </header>
+
+    <!-- introduction -->
+    <section class="intro" id="home">
+      <h1 class="section-intro">
+        Hi, I am <strong>Anthony Cook</strong>
+      </h1>
+      <p class="section-para">& this is what I do...</p>
+    </section>
+
+    <!-- services -->
+
+    <!-- <h3>{ Skillset }</h3> -->
+    <section class="skillset" id="skills">
+      <div class="skills">
+        <div class="skill_1">
+          <h4 class="front-end">Front-End</h4>
+          <p>HTML | CSS | JavaScript | TypeScript | Node.js | JSON</p>
+        </div>
+        <div class="skill_2">
+          <h4 class="back-end">Back-End</h4>
+          <p>Java | MySQL | Python</p>
+        </div>
+        <div class="skill_3">
+          <h4 class="frameworks">Frameworks</h4>
+          <p>Angular | React</p>
+        </div>
+        <div class="skill_4">
+          <h4 class="version-control">Version Control</h4>
+          <p>Git | GitHub</p>
+        </div>
+        <div class="skill_5">
+          <h4 class="ui-ux">UI/UX</h4>
+          <p>Adobe Suite</p>
+        </div>
+        <div class="skill_6">
+          <h4 class="unit-testing">Unit Testing</h4>
+          <p>Jasmine | JUnit</p>
+        </div>
+        <!-- / service -->
+
+        <h3 class="edu">{ Education }</h3>
+        <div class="education">
+
+          <div class="ed-1">
+            <h4>LaunchCode</h4>
+            <p>St. Louis, MO</p>
+            <p>Software Development</p>
+          </div>
+
+          <div class="ed-2">
+            <h4>Cape Girardeau Career and Technology Center</h4>
+            <p>Cape Girardeau, MO</p>
+            <p>Computer Networking</p>
+          </div>
+
+          <div class="ed-3">
+            <h4>Cape Central Senior High</h4>
+            <p>Cape Girardeau, MO</p>
+            <p>General Studies</p>
+          </div>
+
+        </div>
+        <!-- / service -->
+
+        <!-- <div class="Projects">
+          <h3>{ Projects }</h3>
+          <p>
+            Tech Jobs - Console Edition Technology Used: Java
+            https://github.com/Amenince/tech-Jobs-Console Worked on a console
+            based job search for tech jobs. Allows searching for all jobs as
+            well as searching based on location, employer, job title etc. Tech
+            Jobs - Object Oriented Edition (in the works) Technology Used: Java
+            | JUnit https://github.com/Amenince/tech-jobs-oo Built upon the
+            console based job search, this job search uses object oriented
+            concepts, utilizes getters and setters, and also uses JUnit for
+            testing that everything is updated as it should. Orbit Report
+            Technology Used: HTML | CSS | JavaScript | TypeScript | AngularJS
+            Demo: https://amenince.github.io/orbit-report/ Source:
+            https://github.com/Amenince/orbit-report Created an application with
+            Angular to pull in satellite data, which you can then sort by name,
+            type, or you can use search functionality to find specific
+            satellites. Launch Checklist Technology Used: HTML | CSS |
+            JavaScript | JSON Demo:
+            https://amenince.github.io/Launch-Checklist-Form/ Source:
+            https://github.com/Amenince/Launch-Checklist-Form Created an
+            application that uses JSON to pull in data of a planet. The user
+            then enters name values as well as fuel and cargo mass values to
+            simulate if a rocket can and will launch to that specific planet.
+          </p>
+        </div> -->
+        <!-- / service -->
+      </div>
+    </section>
   </body>
 </html>
