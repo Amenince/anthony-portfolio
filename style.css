@@ -15,9 +15,9 @@ body, html {
   max-width: 100vw;
   max-height: 100vh;
   position:fixed;
-  top:0;
+  /* top:0; */
   bottom:0;
-  left:0;
+  /* left:0; */
   right:0;
 }
 
@@ -67,12 +67,25 @@ strong {
   align-content: center;
   justify-content: center;
   text-align: center;
-  line-height: 2em;
+  line-height: 4em;
   margin: 10px;
   padding: 10px;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
   max-width: 75vw;
+}
+
+@media (max-width: 768px) {
+
+  .skillset {
+    max-height: 100vh;
+    overflow: scroll;
+  }
+
+  .skills {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+  }
 }
 
 .education {
@@ -96,7 +109,7 @@ strong {
 
 .skill_1:hover {
   padding-bottom: 20px;
-  transition: 0.5s;
+  transition: 0.5s ease-in-out;
 }
 
 .skill_1:before {
@@ -139,9 +152,7 @@ strong {
   background: rgba(0, 0, 0, 0.4);
   display: flex;
   align-items: center;
-  /* text-align: center; */
-  /* justify-content: center; */
-  transition: 0.5s;
+  transition: 0.5s ease-in-out;
   opacity: 0;
   line-height: 1em;
 }
@@ -172,7 +183,7 @@ strong {
   border-radius: 10px;
   width: 100%;
   opacity: 0.1;
-  transition: 0.5s;
+  transition: 0.5s ease-in-out;
 }
 
 .skill_1:hover .front_end img {
@@ -186,17 +197,20 @@ strong {
   border-radius: 10px;
   position: relative;
   max-width: 300px;
-  max-height: 20vh;
+  height: 20vh;
   display: flex;
+  text-align: center;
   align-items: center;
   justify-content: center;
   margin: 40px;
   background: #062112;
-  transition: 0.5s;
+  transition: 0.5s ease-in-out;
+
 }
 
 .skill_2:hover {
-  /* max-height: 250px; */
+  padding-bottom: 20px;
+  transition: 0.5s ease-in-out;
 }
 
 .skill_2 .back_end {
@@ -214,7 +228,7 @@ strong {
   border-radius: 10px;
   width: 100%;
   opacity: 0.1;
-  transition: 0.5s;
+  transition: 0.5s ease-in-out;
 }
 
 .skill_2:hover .back_end img {
@@ -257,14 +271,14 @@ strong {
   left: 10px;
   right: 10px;
   bottom: 10px;
-  max-height: 90px;
+  height: 40px;
   background: rgba(0, 0, 0, 0.4);
   display: flex;
   align-items: center;
-  text-align: center;
   justify-content: center;
-  transition: 0.5s;
+  transition: 0.5s ease-in-out;
   opacity: 0;
+  line-height: 1em;
 }
 
 .skill_2:hover > p {
@@ -293,17 +307,18 @@ strong {
   border-radius: 10px;
   position: relative;
   max-width: 300px;
-  max-height: 200px;
+  height: 20vh;
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 40px;
   background: #210806;
-  transition: 0.5s;
+  transition: 0.5s ease-in-out;
 }
 
 .skill_3:hover {
-  max-height: 250px;
+  padding-bottom: 20px;
+  transition: 0.5s ease-in-out;
 }
 
 .skill_3 .front_end {
@@ -321,7 +336,7 @@ strong {
   border-radius: 10px;
   max-width: 100%;
   opacity: 0.1;
-  transition: 0.5s;
+  transition: 0.5s ease-in-out;
 }
 
 .skill_3:hover .front_end img {
@@ -364,14 +379,14 @@ strong {
   left: 10px;
   right: 10px;
   bottom: 10px;
-  max-height: 90px;
+  height: 40px;
   background: rgba(0, 0, 0, 0.4);
   display: flex;
   align-items: center;
-  text-align: center;
   justify-content: center;
-  transition: 0.5s;
+  transition: 0.5s ease-in-out;
   opacity: 0;
+  line-height: 1em;
 }
 
 .skill_3:hover > p {
@@ -400,17 +415,18 @@ strong {
   border-radius: 10px;
   position: relative;
   max-width: 300px;
-  max-height: 200px;
+  height: 20vh;
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 40px;
   background: #21061f;
-  transition: 0.5s;
+  transition: 0.5s ease-in-out;
 }
 
 .skill_4:hover {
-  max-height: 250px;
+  padding-bottom: 20px;
+  transition: 0.5s ease-in-out;
 }
 
 .skill_4 .front_end {
@@ -428,7 +444,7 @@ strong {
   border-radius: 10px;
   max-width: 100%;
   opacity: 0.1;
-  transition: 0.5s;
+  transition: 0.5s ease-in-out;
 }
 
 .skill_4:hover .front_end img {
@@ -471,14 +487,14 @@ strong {
   left: 10px;
   right: 10px;
   bottom: 10px;
-  max-height: 90px;
+  height: 40px;
   background: rgba(0, 0, 0, 0.4);
   display: flex;
   align-items: center;
-  text-align: center;
   justify-content: center;
-  transition: 0.5s;
+  transition: 0.5s ease-in-out;
   opacity: 0;
+  line-height: 1em;
 }
 
 .skill_4:hover > p {
@@ -507,17 +523,18 @@ strong {
   border-radius: 10px;
   position: relative;
   max-width: 300px;
-  max-height: 200px;
+  height: 20vh;
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 40px;
   background: #21060e;
-  transition: 0.5s;
+  transition: 0.5s ease-in-out;
 }
 
 .skill_5:hover {
-  max-height: 250px;
+  padding-bottom: 20px;
+  transition: 0.5s ease-in-out;
 }
 
 .skill_5 .front_end {
@@ -535,7 +552,7 @@ strong {
   border-radius: 10px;
   max-width: 100%;
   opacity: 0.1;
-  transition: 0.5s;
+  transition: 0.5s ease-in-out;
 }
 
 .skill_5:hover .front_end img {
@@ -578,14 +595,14 @@ strong {
   left: 10px;
   right: 10px;
   bottom: 10px;
-  max-height: 90px;
+  height: 40px;
   background: rgba(0, 0, 0, 0.4);
   display: flex;
   align-items: center;
-  text-align: center;
   justify-content: center;
-  transition: 0.5s;
+  transition: 0.5s ease-in-out;
   opacity: 0;
+  line-height: 1em;
 }
 
 .skill_5:hover > p {
@@ -614,17 +631,18 @@ strong {
   border-radius: 10px;
   position: relative;
   max-width: 300px;
-  max-height: 200px;
+  height: 20vh;
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 40px;
   background: #1e2106;
-  transition: 0.5s;
+  transition: 0.5s ease-in-out;
 }
 
 .skill_6:hover {
-  max-height: 250px;
+  padding-bottom: 20px;
+  transition: 0.5s ease-in-out;
 }
 
 .skill_6 .front_end {
@@ -642,7 +660,7 @@ strong {
   border-radius: 10px;
   max-width: 100%;
   opacity: 0.1;
-  transition: 0.5s;
+  transition: 0.5s ease-in-out;
 }
 
 .skill_6:hover .front_end img {
@@ -685,14 +703,14 @@ strong {
   left: 10px;
   right: 10px;
   bottom: 10px;
-  max-height: 90px;
+  height: 40px;
   background: rgba(0, 0, 0, 0.4);
   display: flex;
   align-items: center;
-  text-align: center;
   justify-content: center;
-  transition: 0.5s;
+  transition: 0.5s ease-in-out;
   opacity: 0;
+  line-height: 1em;
 }
 
 .skill_6:hover > p {
