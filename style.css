@@ -108,7 +108,7 @@ strong {
   transition: 0.5s ease-in-out;
 }
 
-.skill_1:hover {
+.skill_1:hover, .skill_1:active {
   padding-bottom: 20px;
   transition: 0.5s ease-in-out;
 }
@@ -158,7 +158,7 @@ strong {
   line-height: 1em;
 }
 
-.skill_1:hover > p {
+.skill_1:hover > p, .skill_1:active > p{
   opacity: 1;
 }
 
